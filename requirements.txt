@@ -4,3 +4,4 @@ torchvision>=0.15.0
 Pillow>=10.0.0
 numpy>=1.24.0
 streamlit-drawable-canvas>=0.9.3
+gdown
