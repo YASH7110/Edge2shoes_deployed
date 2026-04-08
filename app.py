@@ -161,7 +161,7 @@ with tab1:
         drawing_mode="freedraw",
     )
     if canvas.image_data is not None:
-        input_image = Image.fromarray(canvas.image_data.astype(np.uint8))
+        input_image = Image.fromarray(canvas.image_data.astype(np.uint8)).convert("RGB")
 
 with tab2:
     file = st.file_uploader("Upload edge image", type=["png", "jpg"])
